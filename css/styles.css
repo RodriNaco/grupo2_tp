@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #A3B18A;
+    background: #ffffff;
+}
+
+#navbar {
+    width: 100%;
+    padding: 15px 15px;
+    margin-bottom: 30px;
+    background-color: #588157;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el logo del navbar */
+#logotipo-empresa {
+    width: 120px; /* Tamaño predeterminado para pantallas grandes */
+    height: auto;
+    transition: all 0.3s ease-in-out; /* Transición suave al cambiar el tamaño */
+}
+
+.navbarli {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    margin-left: auto;
+}
+
+.navbarli a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 769px) {
+    .navbarli a:hover {
+        background-color: #3A5A40;
+        color: #fff;
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para el logo en la sección home */
+#logotipo-home {
+    width: 60%;
+    height: auto;
+    max-width: 300px; /* Limitar el tamaño máximo en pantallas grandes */
+}
+
+/*Agregue descripcion en el index*/
+.descripción, h1 {
+    background-color: #A3B18A;
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 5%;
+    text-align: center;
+}
+
+#titulo-nosotros {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+#nosotros {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-items: center;
+}
+
+.columna {
+    background-color: #A3B18A;
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 5%;
+}
+
+.columna h2 {
+    display: flex;
+    align-self: center;
+    padding-bottom: 5%;
+}
+
+.columna p {
+    display: flex;
+    align-self: center;
+    padding-bottom: 5%;
+}
+
+.fotonosotros {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.columna img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.div-bton-online {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-contacto {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#contact h1 {
+    padding: 15px;
+}
+
+footer {
+    background-color: #588157;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #logotipo-empresa {
+        width: 90px;
+    }
+
+    .navbarli {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    #logotipo-home {
+        width: 80%;
+        max-width: none;
+    }
+
+    #nosotros {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .columna {
+        width: 90%;
+        margin: 10px 0;
+        padding: 5%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    #logotipo-empresa {
+        width: 70px;
+    }
+
+    .navbarli {
+        font-size: 1em;
+    }
+
+    .navbarli a {
+        padding: 10px 0;
+    }
+
+    .columna img {
+        width: 80%;
+    }
+
+    .info-contacto {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .div-bton-online {
+        flex-direction: column;
+    }
+
+    #titulo-nosotros {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+
+    #logotipo-home {
+        width: 70%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
