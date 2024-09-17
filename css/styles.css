@@ -63,7 +63,7 @@ html {
 }
 
 /*Agregue descripcion en el index*/
-.descripción, h1 {
+.descripción, h1, .contenedorsoporte {
     background-color: #A3B18A;
     margin: 5%;
     padding: 5%;
@@ -219,6 +219,60 @@ footer p {
     footer p {
         font-size: 0.9em; 
     }
+
+    .caja_contacto h2 {
+        font-size: 2rem;
+    }
+
+    .caja_contacto p {
+        font-size: 1.125rem;
+    }
+
+    .formulario h2 {
+        font-size: 1.75rem;
+    }
+
+    .campo label {
+        font-size: 1rem;
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.875rem;
+    }
+
+    .nuestra-oficina h3 {
+        font-size: 1.5rem;
+    }
+
+    .direccion p {
+        font-size: 1.5rem;
+    }
+
+    #contenedorimagensoporte img {
+        max-width: 120px;
+        margin: 5px;
+    }
+
+    #gridsoporte {
+        gap: 20px; 
+    }
+
+    .soporteitem {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .logotiposoportegrid {
+        max-width: 100px; /
+    }
+
+    .soporteitem p {
+        font-size: 1rem; 
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -266,6 +320,44 @@ footer p {
 
     .fotoUade img {
         height: 25px;
+    }
+
+    #contenedorimagensoporte img {
+        max-width: 100px;
+        margin: 3px; 
+    }
+
+    #gridsoporte {
+        gap: 10px;
+    }
+
+    .soporteitem {
+        gap: 5px; 
+    }
+
+    .logotiposoportegrid {
+        max-width: 80px; 
+    }
+
+    .soporteitem p {
+        font-size: 0.9rem;
+    }
+
+    .caja_contacto {
+        padding: 1.5%;
+    }
+
+    .formulario {
+        padding: 15px;
+    }
+
+    .contenido-oficina {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contenido-oficina iframe {
+        height: 300px;
     }
 }
 .caja_contacto {
@@ -377,52 +469,69 @@ footer p {
     color: #000000;
     margin: 10px 0;
 }
-@media (max-width: 768px) {
-    .caja_contacto h2 {
-        font-size: 2rem;
-    }
 
-    .caja_contacto p {
-        font-size: 1.125rem;
-    }
+/*Apartado de soporte*/
 
-    .formulario h2 {
-        font-size: 1.75rem;
-    }
-
-    .campo label {
-        font-size: 1rem;
-    }
-
-    .campo input,
-    .campo textarea {
-        font-size: 0.875rem;
-    }
-
-    .nuestra-oficina h3 {
-        font-size: 1.5rem;
-    }
-
-    .direccion p {
-        font-size: 1.5rem;
-    }
+#soporte h2{
+    text-align: center;
+    padding: 2%;
+    font-size: 500%;
 }
 
-@media (max-width: 480px) {
-    .caja_contacto {
-        padding: 1.5%;
-    }
-
-    .formulario {
-        padding: 15px;
-    }
-
-    .contenido-oficina {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contenido-oficina iframe {
-        height: 300px;
-    }
+.titulosoporte{
+    font-size: 300%;
 }
+
+.textosoporte{
+    font-size: 150%;
+}
+
+.contenedorsoporte h3{
+    font-size: 250%;
+    margin-bottom: 4%;
+}
+
+#contenedorimagensoporte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#contenedorimagensoporte img {
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+
+.logotiposoporte{
+    max-height: 200px;
+    height: auto;
+    width: auto;
+}
+
+#gridsoporte {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; 
+    margin: 5%;
+}
+
+.soporteitem {
+    display: flex;
+    align-items: center; 
+    gap: 60px; 
+}
+
+.logotiposoportegrid {
+    max-width: 150px; 
+    height: auto;
+}
+
+.soporteitem p {
+    flex: 1; 
+    font-size: 1.5rem;
+}
+
+/*Apartado de soporte*/
