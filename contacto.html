@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo n°2</title>
+    <title>SKAFIRE</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./img/logoempresa.png">
 </head>
 <body>
-    <!-- Header con el menú de navegación -->
+
     <header id="navbar">
         <a href="index.html"><img id="logotipo-empresa" src="./img/logoempresa.png" alt="Logo de la empresa"></a>
         <nav>
@@ -22,25 +22,61 @@
             </ul>
         </nav>
     </header>
-        <!-- Sección principal del Contacto -->
+
     <main>
-        <section id="contact" class="contacto">
-            <div class="info-contacto">
-                <ul>
-                   <!-- <h1><li><strong>Teléfono:</strong>xx</li></h1>
-                    <h1><strong>Email:</strong> xx</li></h1>
-                    <h1><li><strong>Ubicación:</strong>xx</li></h1>
-                    <h1><li><strong>Código postal:</strong> xx</li></h1>-->
-                </ul>
+        <section id="caja_contacto" class="caja_contacto">
+            <h2>Contacto</h2><br>
+            <p>¡Gracias por contactarnos! Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible. 
+                Cuéntanos en detalle tu consulta, y nuestro equipo estará encantado de ayudarte y atenderte rápidamente.</p>
+        </section>
+                
+        <form class="formulario">
+            <h2>Consultas</h2>
+            <div class="caja-consultas">
+                <div class="campo">
+                    <label for="nombreApellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreApellido" name="nombreApellido" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="correoElectronico">Correo Electrónico</label>
+                    <input type="email" id="correoElectronico" name="correoElectronico" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="consulta">Consulta</label>
+                    <textarea id="consulta" name="consulta" rows="5" required></textarea>
+                </div>
+        
+                <button type="submit">Enviar</button>
             </div>
+        </form>
+        
+        <div class="nuestra-oficina">
+            <h3>Nuestra Oficina</h3>
+            <div class="contenido-oficina">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.463937427812!2d-58.38336701281902!3d-34.6177145264012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses-419!2sar!4v1726536393501!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="direccion">
+                    <p><strong>Dirección:</strong></p>
+                    <p>Lima 757, C1073 Cdad. Autónoma de Buenos Aires, Argentina</p>
+                </div>
+            </div>
+        </div>        
         </section>
     </main>
+
     <!-- Footer con derechos reservados e información de contacto -->
     <footer>
         <p>Materia: Diseño y desarrollo web | Curso: 480799</p>
         <p>Derechos reservados &copy; 2024 - Sitio para uso educativo | Grupo 2</p>
         <div class="fotoUade">
-            <img id=fotoUade src="./img/logouade.png" alt="Logo de UADE">
+            <img id="fotoUade" src="./img/logouade.png" alt="Logo de UADE">
         </div>
     </footer>
 </body>
