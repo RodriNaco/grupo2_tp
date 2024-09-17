@@ -18,6 +18,11 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+.menuitem.active{
+    background-color: #3A5A40;
+    color: #ffffff;
+    padding: 3px 0px;
+}
 
 /* Estilos para el logo del navbar */
 #logotipo-empresa {
