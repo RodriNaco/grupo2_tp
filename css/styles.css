@@ -138,18 +138,41 @@ html {
     padding: 15px;
 }
 
+
 footer {
     background-color: #588157;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 20px;
     color: #fff;
+    position: relative;
 }
 
-/* Media Queries para pantallas más pequeñas */
+
+footer p {
+    margin: 5px 0;
+}
+
+
+.fotoUade {
+    margin-top: 20px;
+    position: absolute; 
+    bottom: 5px;
+    right: 0px;
+    max-width: 55%;
+    width: auto;
+}
+
+.fotoUade img {
+    height: 80%; 
+    max-width: 55%; 
+    height: auto; 
+}
+
+
 @media (max-width: 768px) {
     #logotipo-empresa {
         width: 90px;
@@ -179,6 +202,22 @@ footer {
 
     footer {
         flex-direction: column;
+        padding: 10px;
+        align-items: center; 
+    }
+
+    .fotoUade {
+        margin-top: 10px;
+        position: static; 
+        text-align: center; 
+    }
+
+    .fotoUade img {
+        height: 30px; 
+    }
+
+    footer p {
+        font-size: 0.9em; 
     }
 }
 
@@ -222,6 +261,10 @@ footer {
     }
 
     footer p {
-        font-size: 0.9em;
+        font-size: 0.8em; 
+    }
+
+    .fotoUade img {
+        height: 25px;
     }
 }
