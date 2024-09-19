@@ -18,6 +18,7 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
 .menuitem.active{
     background-color: #3A5A40;
     color: #ffffff;
@@ -569,7 +570,7 @@ footer p {
 }
 
 #contenedorimagensoporte img {
-    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+    max-width: 100%; /* Asegumainra que las imágenes no sean más anchas que su contenedor */
     height: auto; /* Mantiene la proporción original de la imagen */
 }
 
@@ -604,3 +605,83 @@ footer p {
 }
 
 /*Apartado de soporte*/
+
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 70px;
+}
+  
+.service-description {
+    background-color: #A3B18A;
+    padding: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+  
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 20px;
+}
+  
+.card {
+    background-color: #A3B18A !important;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 20px !important;
+}
+  
+.card-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.card-image{
+    margin-bottom: 15px;
+}
+  
+.service-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+
+}
+  
+.info-card {
+    background-color: #A3B18A;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    
+    .service-cards, .service-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+   
+    .card, .info-card {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .service-cards {
+      
+        margin-bottom: 30px;
+    }
+    
+    .service-description {
+        margin-bottom: 30px;
+    }
+}
+
