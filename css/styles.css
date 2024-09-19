@@ -684,3 +684,77 @@ footer p {
     }
 }
 
+.main5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Ampliar el ancho máximo de la estructura */
+}
+.portafolio-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px; /* Reducir el espacio vertical entre las secciones */
+    width: 100%; /* Asegurar que las secciones ocupen el 100% del ancho disponible */
+    padding: 15px; /* Reducir padding para achicar altura */
+    border-radius: 10px;
+}
+
+/* Estilo para la primera, tercera y cuarta columna */
+.portafolio-content:first-of-type,
+.portafolio-content:nth-of-type(3),
+.portafolio-content:nth-of-type(4) {
+    flex-direction: column;
+}
+
+/* Estilo para la segunda y tercera columna en conjunto (2 y 3) */
+.portafolio-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Asegurar que las columnas ocupen todo el ancho */
+    gap: 2%; /* Reducir espacio entre las columnas */
+}
+
+.portafolio-row a {
+        text-decoration: none;
+        color: #3A5A40;
+        font-weight: 700; /* Hacer el enlace más grueso */
+        font-size: 1.4rem; /* Aumentar el tamaño del texto del enlace */
+    }
+
+
+
+/* Ajuste de las columnas */
+.portafolio-content .columna  {
+    font-size: 1.4rem; /* Aumentar el tamaño de la fuente de las columnas */
+    width: 100%; /* Asegurar que ocupen el 48% del ancho cada una para quedar una al lado de la otra */
+    padding: 10px;
+    font-weight: 500; /* Hacer el texto un poco más grueso */
+}
+
+/* Estilo para el contenido de imágenes */
+.columna img {
+    display: block;
+    margin: 10px auto; /* Reducir margen para achicar la altura */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Título principal */
+.portafolio-content h1 {
+    font-size: 2rem; /* Aumentar el tamaño del título */
+    font-weight: 900; /* Hacer el título más grueso */
+    margin-bottom: 10px; /* Reducir margen debajo del título */
+}
+
+/* Estilo para el enlace SKAFIRE */
+
+
+/* Espaciado en los párrafos */
+.portafolio-content p {
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Aumentar el tamaño del texto del párrafo */
+    font-weight: 900; /* Hacer el texto un poco más grueso */
+}
