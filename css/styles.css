@@ -59,6 +59,51 @@ html {
     display: flex;
     justify-content: center;
 }
+/*Seccion Inicio*/
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 100%;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#description h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#description p {
+    width:100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Sección de contenido principal */
+#titulo-nosotros {
+    text-align: center;
+    font-size: 2.0em;
+    margin-top: 40px; /*Afecta al titulo de inicio tambien*/
+    color: #3A5A40;
+}
+
+section #home {
+    text-align: center;
+}
+
+#home img {
+    width: 80%;
+    margin-bottom: 20px;
+}
 
 /* Estilos para el logo en la sección home */
 #logotipo-home {
@@ -81,57 +126,85 @@ html {
 
 #titulo-nosotros {
     padding: 0px;
-    margin: 0px;
     display: flex;
     justify-content: center;
     color: #fff;
+    border-radius: 20px;
 }
 
+/* Sección Nosotros */
+.main2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#titulo-nosotros1 {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border-radius: 20px;
+}
 #nosotros {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
     justify-items: center;
+    padding: 20px;
+    background-color: #A3B18A;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 90%;
 }
 
 .columna {
     background-color: #A3B18A;
-    margin: 5%;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 180px;
+}
+
+.fotonosotros img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .columna h2 {
-    display: flex;
-    align-self: center;
-    padding-bottom: 5%;
-}
-
-.columna p {
-    display: flex;
-    align-self: center;
-    padding-bottom: 5%;
-}
-
-.fotonosotros {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #fff;
 }
 
 .columna img {
-    width: 50%;
-    height: auto;
+    height: 5;
     object-fit: cover;
 }
 
-.div-bton-online {
-    display: flex;
-    justify-content: space-around;
+.bton-online {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #3A5A40;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
+
+.bton-online:hover {
+    background-color: #2d4630;
+    transform: scale(1.05);
+}
+
+/*Fin seccion */
 
 .info-contacto {
     color: #fff;
@@ -189,14 +262,25 @@ footer p {
         font-size: 1.2em;
     }
 
+     /* Main (Contenido principal) */
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px 0;
+     }
+
+
     #logotipo-home {
         width: 80%;
         max-width: none;
     }
 
+    #logotipo-empresa {
+        width: 100px;
+    }
     #nosotros {
         grid-template-columns: 1fr;
-        margin: 0;
     }
 
     .columna {
