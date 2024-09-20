@@ -684,6 +684,7 @@ footer p {
     }
 }
 
+/* Estilo general */
 .main5 {
     display: flex;
     flex-direction: column;
@@ -691,70 +692,77 @@ footer p {
     padding: 20px;
     width: 100%; /* Ampliar el ancho máximo de la estructura */
 }
-.portafolio-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.container-content6 {
     text-align: center;
-    margin-bottom: 10px; /* Reducir el espacio vertical entre las secciones */
-    width: 100%; /* Asegurar que las secciones ocupen el 100% del ancho disponible */
-    padding: 15px; /* Reducir padding para achicar altura */
+    max-width: 1000px; /* Ampliar el contenedor para mejorar la legibilidad */
+    margin-bottom: 20px;
+}
+
+/* Estilo para las columnas 2 y 3 */
+.portafolio-row2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Asegura que las columnas se reorganicen en dispositivos pequeños */
+}
+
+.portafolio-content2 {
+    flex: 1;
+    min-width: 48%; /* Asegura que las columnas tengan al menos un 48% de ancho */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
     border-radius: 10px;
 }
 
-/* Estilo para la primera, tercera y cuarta columna */
-.portafolio-content:first-of-type,
-.portafolio-content:nth-of-type(3),
-.portafolio-content:nth-of-type(4) {
-    flex-direction: column;
+/* Estilo de las columnas */
+.columna6 {
+    padding: 20px;
+    background-color: #A3B18A;
+    font-size: 1.4rem; /* Aumentar tamaño del texto */
+    font-weight: 500;
 }
 
-/* Estilo para la segunda y tercera columna en conjunto (2 y 3) */
-.portafolio-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /* Asegurar que las columnas ocupen todo el ancho */
-    gap: 2%; /* Reducir espacio entre las columnas */
-}
-
-.portafolio-row a {
-        text-decoration: none;
-        color: #3A5A40;
-        font-weight: 700; /* Hacer el enlace más grueso */
-        font-size: 1.4rem; /* Aumentar el tamaño del texto del enlace */
-    }
-
-
-
-/* Ajuste de las columnas */
-.portafolio-content .columna  {
-    font-size: 1.4rem; /* Aumentar el tamaño de la fuente de las columnas */
-    width: 100%; /* Asegurar que ocupen el 48% del ancho cada una para quedar una al lado de la otra */
-    padding: 10px;
-    font-weight: 500; /* Hacer el texto un poco más grueso */
-}
-
-/* Estilo para el contenido de imágenes */
-.columna img {
+/* Alinear imágenes dentro de las columnas */
+.columna6 img {
     display: block;
-    margin: 10px auto; /* Reducir margen para achicar la altura */
+    margin: 0 auto; /* Centrar las imágenes */
     max-width: 100%;
     height: auto;
 }
 
-/* Título principal */
-.portafolio-content h1 {
-    font-size: 2rem; /* Aumentar el tamaño del título */
-    font-weight: 900; /* Hacer el título más grueso */
-    margin-bottom: 10px; /* Reducir margen debajo del título */
+/* Estilo para el título principal */
+h1 {
+    font-size: 2.5rem; /* Aumentar el tamaño del título */
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-/* Estilo para el enlace SKAFIRE */
+/* Estilo para los enlaces */
+.main5 a {
+    text-decoration: none;
+    color: #3A5A40; /* Cambia el color del enlace */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
 
 
-/* Espaciado en los párrafos */
-.portafolio-content p {
-    margin-bottom: 10px;
-    font-size: 1.5rem; /* Aumentar el tamaño del texto del párrafo */
-    font-weight: 900; /* Hacer el texto un poco más grueso */
+
+/* Párrafos */
+.main5 p {
+    font-size: 1.5rem; /* Aumentar el tamaño del texto */
+    margin-bottom: 15px;
+}
+
+/* Responsive design para dispositivos móviles */
+@media (max-width: 768px) {
+    .portafolio-row2 {
+        flex-direction: column; /* Las columnas se apilarán en dispositivos pequeños */
+    }
+    .portafolio-content2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
